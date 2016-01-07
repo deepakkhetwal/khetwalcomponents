@@ -1,0 +1,14 @@
+{
+  "name": "khetwal-component",
+  "description": "just for testing",
+  "main": "loan.lookup.component.js",
+  "moduleType": [],
+  "keywords": [
+    "angulrjs"
+  ],
+  "authors": [
+    "deepak khetwal"
+  ],
+  "license": "MIT",
+  "homepage": "?"
+}
