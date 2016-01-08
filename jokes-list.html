@@ -1,0 +1,23 @@
+<div class="col-md-12">
+    <table class="table table-striped table-condensed">
+        <thead class="btn-success">
+        <tr>
+            <th class="text-center">BELOW ARE JOKES FOR KIDS </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="text-center" ng-hide="vm.dataLoaded">
+            <td><label>Please wait, finding best jokes for you.. </label></td>
+        </tr>
+        <tr ng-repeat="joke in vm.jokesList.jokes" ng-show="vm.dataLoaded">
+            <td>
+                {{::joke._id.description}} <br><button ng-click="vm.PostLike()" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up text-primary"> </span> </button>
+
+                <b><span id='cnt{{::joke._id._id}}'>{{joke.likesCount}} </span> Likes </b>
+                <span id='{{::joke._id._id}}' style="display:none"><label class="text-primary">You liked this joke!</label></span>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
