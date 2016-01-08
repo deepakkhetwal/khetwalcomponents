@@ -6,6 +6,9 @@
   "keywords": [
     "angulrjs"
   ],
+   "ignore": [
+    "**/.git*"
+   ],
   "authors": [
     "deepak khetwal"
   ],
